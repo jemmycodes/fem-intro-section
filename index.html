@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="navigation__mobile">
+      <div class="nav__email">
+        <img src="images/logo.svg" class="logo" alt="snap logo" />
+      </div>
+      <div class="hamburger" onclick="showNav()">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+      <nav class="nav__mobile">
+        <ul class="main__list">
+          <li><a clas="#">Features <img src="images/icon-arrow-down.svg"  class="arrow__down"><img src="images/icon-arrow-up.svg" class="arrow__up hidden"> </a>
+          <ul class="dropdown__list hidden">
+            <li><img src="images/icon-todo.svg" class="list__icon">To Do</li>
+            <li><img src="images/icon-calendar.svg  " class="list__icon">Calendar</li>
+            <li><img src="images/icon-reminders.svg" class="list__icon">Reminders </li>
+            <li><img src="images/icon-planning.svg" class="list__icon">Planning</li>
+          </ul></li>
+          <li><a clas="#">Company <img src="images/icon-arrow-down.svg"  class="arrow__down"><img src="images/icon-arrow-up.svg" class="arrow__up hidden"></a>
+          <ul class="dropdown__list hidden">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul></li>
+          <li><a clas="#">Careers</a></li>
+          <li><a clas="#">About</a></li>
+          <li class="middle"><a clas="#">Login</a></li>
+          <li class="middle register"><a clas="#">Register</a></li>
+        </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="image__container">
+        <img src="images/image-hero-mobile.png" alt="" class="main__img">
+      </div>
+      <div class="text__container">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter the location. Streamline processes, create team rituals and watch productivity soar</p>
+        <div class="btn"><a class="btn__learn-more" href="#">Learn more</a></div>
+      </div>
+    </div>
+  </main>
+  <div class="brand__box">
+    <div class="brands"><img src="images/client-databiz.svg" alt="" class="brands__img"></div>
+    <div class="brands"><img src="images/client-audiophile.svg" alt="" class="brands__img"></div>
+    <div class="brands"><img src="images/client-meet.svg" alt="" class="brands__img"></div>
+    <div class="brands"><img src="images/client-maker.svg" alt="" class="brands__img"></div>
+  </div>
+
+  <div class="overlay hidden"></div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
